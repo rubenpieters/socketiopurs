@@ -22,7 +22,7 @@ function onSocketConnection(client) {
 };
 
 function onMessage(data) {
-  util.log("received: " + JSON.stringify(data.adt));
+  util.log("received: " + JSON.stringify(data));
   util.log("calling purescript: " + PS.showMyAdt(data.adt));
 };
 
